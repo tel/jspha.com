@@ -1,0 +1,20 @@
+title: Jspha
+baseURL: https://jspha.com/
+languageCode: en-us
+theme: hyde
+
+googleAnalytics: UA-82055587-1
+
+author:
+  name: spf13
+  homepage: http://spf13.com
+
+params:
+  description: >
+    Unorchestrated thoughts from Joseph Abrahamson
+  themeColor: theme-base-0b
+  layoutReverse: true
+
+menus:
+  # Add menu items here, {name: ..., url: ...}
+  main: []
