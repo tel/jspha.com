@@ -1,10 +1,12 @@
 <section class="postfooter">
 
   <ul class="posttags">
-    <!-- 
-      range tags 
-        <li class="posttags-item posttags-item-SLUG"><a href="TAG URL">TAG NAME</a></li>
-    -->
+    {{ range .Params.tags }}
+      {{ $tag := . }}
+      {{ with $.Site.GetPage (printf "/%s/%s" "tags" $tag) -}}
+        <li class="posttags-item posttags-item-{{ . }}"><a href="{{ .Permalink }}">{{ $tag }}</a></li>
+      {{- end -}}
+    {{ end }}
   </ul>
 
   <!-- 
