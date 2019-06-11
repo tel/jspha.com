@@ -2,22 +2,22 @@
 
 <main class="page">
 
-  {{ partial "postreadingtime.html" . }}
+  {{ partial "post/readingtime.html" . }}
 
   <!-- if feature_image then add class "post-featured" -->
   <article class="post">
 
     <!-- if feature_image (partial "postcover.html" .) -->
 
-    {{ partial "postflow.html" . }}
+    {{ partial "post/flow.html" . }}
 
     <div class="wrapper">
 
       <!-- if not feature_image (partial "postheader.html" .) -->
 
-      {{ partial "postheader.html" . }}
+      {{ partial "post/header.html" . }}
 
-      {{ partial "postmain.html" . }}
+      {{ partial "post/main.html" . }}
 
     </div>
 
@@ -25,11 +25,11 @@
 
   <div class="wrapper">
 
-    {{ partial "postfooter.html" . }}
+    {{ partial "post/footer.html" . }}
 
     <!-- with (primary_author) (partial "authorprofile.html" .) -->
 
-    {{ partial "postnav.html" . }}
+    {{ partial "post/nav.html" . }}
 
   </div>
 

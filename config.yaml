@@ -12,7 +12,7 @@ author:
 params:
   description: >
     Unorchestrated thoughts from Joseph Abrahamson
-  copyright: All rights reserved
+  subscribe: false # true if subscribe form shows
   social:
     twitter: https://twitter.com/sdbo/
     github: https://github.com/tel/

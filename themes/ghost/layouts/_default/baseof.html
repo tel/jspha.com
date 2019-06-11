@@ -10,9 +10,11 @@
 
   {{ block "main" . -}}{{- end }}
 
+  {{ if .Site.Params.subscribe }}
   <div class="wrapper">
     {{ partial "subscribe.html" . }}
   </div>
+  {{ end }}
 
   {{ partial "footer.html" . }}
 
