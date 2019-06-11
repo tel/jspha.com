@@ -1,0 +1,19 @@
+<section class="subscribe">
+  <h3 class="subscribe-title">Subscribe to {{ .Site.Title }}</h3>
+  <p class="subscribe-description">
+    Subscribe to our email newsletter to receive article notifications and regular updates. We don't spam and your email
+    won't be shared with third-parties.
+  </p>
+
+  <form method="post" class="subscribe-form">
+    <!-- add "error" class on error -->
+    <div class="form-group">
+      <input type="email" class="subscribe-input" placeholder="Email Address..." value="">
+    </div>
+    <button class="subscribe-submit" type="submit" data-success-input="Thanks for subscribing...">
+      <img class="svg-icon svg-icon-stroke svg-icon-arrow-right-circle"
+        src='{{ (resources.Get "svg/arrow-right-circle.svg").Permalink }}' />
+    </button>
+  </form>
+
+</section>

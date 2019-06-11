@@ -1,0 +1,38 @@
+<article class="postitem">
+  <div class="postitem-upper">
+    <div class="postitem-category">
+      <!-- 
+        if (primary tag)
+          <a href="TAG URL">TAG NAME</a>
+      -->
+    </div>
+    <!-- 
+      if (featured)
+        <div class="postitem-featured">
+          <span>Featured</span>
+          <img class="svg-icon svg-icon-stroke svg-icon-bookmark" src='{{ (resources.Get "svg/bookmark.svg").Permalink }}' />
+        </div>
+    -->
+  </div>
+  <h2 class="postitem-title">
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+  </h2>
+  <div class="postmeta">
+    <span class="postmeta-intro">Posted</span>
+    <!-- 
+      if (primary author)
+        <span class="postmeta-author">by <a href="AUTHOR URL"><span class="postmeta-avatar"
+              style="background-image: url('AUTHOR IMAGE');"></span>AUTHOR NAME</a></span>
+    -->
+    <span class="postmeta-published">
+      on <a href="{{ .Permalink }}">
+        <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z0700" }}'>
+          {{ .Date.Format "_2 January 2006"}}
+        </time>
+      </a>
+    </span>
+  </div>
+  <p class="postitem-excerpt">
+    {{ .Summary }}
+  </p>
+</article>

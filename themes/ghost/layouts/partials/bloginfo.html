@@ -1,0 +1,8 @@
+<section class="bloginfo">
+  <div class="bloginfo-inner">
+    {{ partial "blogtitle.html" . }}
+    {{ with .Site.Params.description }}
+    <p class="bloginfo-description">{{ . }}</p>
+    {{ end }}
+  </div>
+</section>

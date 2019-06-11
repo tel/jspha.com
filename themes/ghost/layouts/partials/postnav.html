@@ -1,0 +1,29 @@
+<section class="postnav">
+  {{ with .Next }}
+  <a href="{{ .Permalink }}" class="postnav-next">
+    <div class="postnav-inner">
+      <span class="postnav-type">Next Post</span>
+      <h4 class="postnav-title">{{ .Title }}</h4>
+      <div class="postnav-published">
+        <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z0700"}}'>
+          {{ .Date.Format "_2 Jan 2006" }}
+        </time>
+      </div>
+    </div>
+  </a>
+  {{ end }}
+
+  {{ with .Prev }}
+  <a href="{{ .Permalink }}" class="postnav-previous">
+    <div class="postnav-inner">
+      <span class="postnav-type">Previous Post</span>
+      <h4 class="postnav-title">{{ .Title }}</h4>
+      <div class="postnav-published">
+        <time datetime='{{ .Date.Format "2006-01-02T15:04:05Z0700"}}'>
+          {{ .Date.Format "_2 Jan 2006" }}
+        </time>
+      </div>
+    </div>
+  </a>
+  {{ end }}
+</section>

@@ -1,0 +1,7 @@
+<section class="postlist">
+
+  {{ range .Data.Pages -}}
+  {{ partial "postitem.html" . }}
+  {{- end }}
+
+</section>

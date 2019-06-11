@@ -1,0 +1,12 @@
+{{ $jQuery := resources.Get "js/jquery.js"}}
+{{ $plugClipboard := resources.Get "js/plugin/clipboard.js"}}
+{{ $plugFitvids := resources.Get "js/plugin/fitvids.js"}}
+{{ $plugHighlight := resources.Get "js/plugin/highlight.js"}}
+{{ $plugLoadcss := resources.Get "js/plugin/loadcss.js"}}
+{{ $plugReadingTime := resources.Get "js/plugin/readingtime.js"}}
+{{ $plugSVG := resources.Get "js/plugin/svg.js"}}
+{{ $plugWaypoints := resources.Get "js/plugin/waypoints.js"}}
+{{ $plugins := slice $plugClipboard $plugFitvids $plugHighlight $plugLoadcss $plugReadingTime $plugSVG $plugWaypoints | resources.Concat "js/plugins.js" }}
+{{ $theme := resources.Get "js/theme.js" }}
+{{ $allScripts := (slice $jQuery $plugins $theme) | resources.Concat "js/script.js" }}
+<script async type="text/javascript" src="{{ $allScripts.Permalink }}"></script>

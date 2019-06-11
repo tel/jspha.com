@@ -1,0 +1,17 @@
+<section class="postheader">
+  <!-- 
+    with primary-tag
+      <div class="postheader-category"><a href="TAG URL">TAG NAME</a></div>
+  -->
+  <h1 class="postheader-title">{{ .Title }}</h1>
+  <div class="postmeta">
+    <span class="postmeta-intro">Posted</span>
+    <!--
+      with primary_author
+        <span class="postmeta-author">by <a href="AUTHOR URL"><span class="postmeta-avatar"
+              style="background-image: url('AUTHOR_IMAGE');"></span>AUTHOR NAME</a></span>
+    -->
+    <span class="postmeta-published">on <a href="{{ .Permalink }}"><time
+          datetime='{{ .Date.Format "2019-01-01"}}'>{{ .Date.Format "_2 Jan 2006"}}</time></a></span>
+  </div>
+</section>

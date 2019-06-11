@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+
+{{ partial "head.html" . }}
+
+<!-- versus "page-template" -->
+
+<body class="home-template">
+  {{ partial "header.html" . }}
+
+  {{ block "main" . -}}{{- end }}
+
+  <div class="wrapper">
+    {{ partial "subscribe.html" . }}
+  </div>
+
+  {{ partial "footer.html" . }}
+
+  {{ partial "scripts.html" .}}
+
+  {{ template "_internal/google_analytics_async.html" . }}
+</body>
+
+</html>

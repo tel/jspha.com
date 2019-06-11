@@ -1,7 +1,7 @@
 title: Jspha
 baseURL: https://jspha.com/
 languageCode: en-us
-theme: hyde
+theme: ghost
 
 googleAnalytics: UA-82055587-1
 
@@ -12,6 +12,13 @@ author:
 params:
   description: >
     Unorchestrated thoughts from Joseph Abrahamson
+  copyright: All rights reserved
+  social:
+    twitter: https://twitter.com/sdbo/
+    github: https://github.com/tel/
+    instagram: https://www.instagram.com/sdbo/
+    linkedin: https://www.linkedin.com/in/abrahamsonj/
+  twitter_url: https://twitter.com/sdbo
   themeColor: theme-base-0b
   layoutReverse: true
 

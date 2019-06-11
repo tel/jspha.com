@@ -1,0 +1,19 @@
+<section class="postflow">
+  <div class="postflow-logo">
+    <!-- 
+        if (blog.logo)
+            <a href="{{ .Site.BaseURL }}">
+                <img src="BLOG LOGO" alt="{{ .Site.Title }}"/>
+            </a>
+      -->
+  </div>
+  <div class="postflow-info wrapper">
+    <div class="postflow-current">Introduction</div>
+    <div class="postflow-title">{{ .Title }}</div>
+    <div class="postflow-readtime" data-percent="40">
+      <div class="postflow-readtime-progress">
+        <div class="postflow-readtime-progress-fill"></div>
+      </div>
+    </div>
+  </div>
+</section>

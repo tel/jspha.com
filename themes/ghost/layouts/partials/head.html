@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" {{with .Site.LanguageCode}} xml:lang="{{.}}" lang="{{.}}" {{end}}>
+
+<head>
+
+  {{ if .IsHome -}}
+  <title>{{ .Site.Title }}</title>
+  {{- else -}}
+  <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
+  {{- end }}
+
+  <!-- Meta -->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS -->
+  {{ $options := (dict "outputStyle" "compressed" "enableSourceMap" true) }}
+  {{ $styleScreen := resources.Get "sass/screen.scss" | toCSS $options | fingerprint }}
+
+  <link href="{{ $styleScreen.Permalink }}" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet" type="text/css" href="{{ $styleScreen.Permalink }}" />
+  </noscript>
+
+  {{ $styleCrit := resources.Get "sass/critical.scss" | toCSS (dict "outputStyle" "compressed") }}
+  <style>{{ $styleCrit.Content | safeCSS }}</style>
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  <!-- RSS etc -->
+  {{ range .AlternativeOutputFormats -}}
+  {{ printf `<link href="%s" rel="%s" type="%s" title="%s" />` .Permalink .Rel .MediaType.Type $.Site.Title | safeHTML }}
+  {{ end -}}
+</head>

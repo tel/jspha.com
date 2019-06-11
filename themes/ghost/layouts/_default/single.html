@@ -1,0 +1,38 @@
+{{ define "main" -}}
+
+<main class="page">
+
+  {{ partial "postreadingtime.html" . }}
+
+  <!-- if feature_image then add class "post-featured" -->
+  <article class="post">
+
+    <!-- if feature_image (partial "postcover.html" .) -->
+
+    {{ partial "postflow.html" . }}
+
+    <div class="wrapper">
+
+      <!-- if not feature_image (partial "postheader.html" .) -->
+
+      {{ partial "postheader.html" . }}
+
+      {{ partial "postmain.html" . }}
+
+    </div>
+
+  </article>
+
+  <div class="wrapper">
+
+    {{ partial "postfooter.html" . }}
+
+    <!-- with (primary_author) (partial "authorprofile.html" .) -->
+
+    {{ partial "postnav.html" . }}
+
+  </div>
+
+</main>
+
+{{- end }}

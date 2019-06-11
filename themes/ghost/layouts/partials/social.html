@@ -1,0 +1,33 @@
+<section class="social">
+
+  {{ with .Site.Params.Social.twitter }}
+  <a class="social-item social-twitter" href="{{ . }}" target="_blank" title="Twitter">
+    <img class="svg-icon svg-icon-fill svg-icon-twitter" src='{{ (resources.Get "svg/twitter.svg").Permalink }}' />
+  </a>
+  {{ end }}
+
+  {{ with .Site.Params.Social.instagram }}
+  <a class="social-item social-instagram" href="{{ . }}" target="_blank" title="Instagram">
+    <img class="svg-icon svg-icon-fill svg-icon-instagram" src='{{ (resources.Get "svg/instagram.svg").Permalink }}' />
+  </a>
+  {{ end }}
+
+  {{ with .Site.Params.Social.github }}
+  <a class="social-item social-github" href="{{ . }}" target="_blank" title="Github">
+    <img class="svg-icon svg-icon-fill svg-icon-github" src='{{ (resources.Get "svg/github.svg").Permalink }}' />
+  </a>
+  {{ end }}
+
+  {{ with .Site.Params.Social.linkedin }}
+  <a class="social-item social-linkedin" href="{{ . }}" target="_blank" title="LinkedIn">
+    <img class="svg-icon svg-icon-fill svg-icon-linkedin" src='{{ (resources.Get "svg/linkedin.svg").Permalink }}' />
+  </a>
+  {{ end }}
+
+  {{ with .OutputFormats.Get "rss" -}}
+  <a class="social-item social-rss" href="{{ .Permalink }}" target="_blank" title="RSS">
+    <img class="svg-icon svg-icon-fill svg-icon-rss" src='{{ (resources.Get "svg/rss.svg").Permalink }}' />
+  </a>
+  {{ end -}}
+
+</section>

@@ -1,5 +1,5 @@
 ---
-title: 'Decision sickness'
+title: Decision sickness
 date: Wed, 01 May 2019 17:14:11 +0000
 draft: false
 tags: []
@@ -14,7 +14,7 @@ I think it's fair to say that we are all plagued by these decision sicknesses at
 
 What I'm saying is in lots of ways nothing new, but using _sickness_ as a metaphor we can ask different questions and take different positions. First off, we can recognize that we're all suffering from these sicknesses and that the world is plagued with pathogens for them. There are even people (think: aggressive, maligned advertisement) who are essentially bioterrorists.
 
-* * *
+---
 
 What's more interesting to me, though, is our decision sickness immune system. What do we as people do to ensure that we're protected from these diseases?
 
@@ -24,7 +24,7 @@ Other forms of immunity include what one might call _grit_. Decision sicknesses 
 
 At the same time, grit feels like such a raw system. _Overcoming_ and _persevering_ are important and critical, but also far from _thriving_. Grit alone protects you from the worst consequences of decision sicknesses—catatonia, shutdown, despair—but only just.
 
-* * *
+---
 
 The most powerful resistances I know to decision sicknesses are (a) building your _decisive strength_ and (b) practicing [reorientation]({{< relref "reorientation-is-key.md" >}}).
 
@@ -36,7 +36,7 @@ Reorientation (which I've [written about before]({{< relref "reorientation-is-ke
 
 Proper (re)orientation in a process of understanding your mental model of the world sufficiently well that you can change it. And, then, changing it regularly and effectively so that it remains a useful tool to you. How do you improve this process? How can you practice it? What emotional or cognitive barriers exist?
 
-* * *
+---
 
 Interestingly, these strengths are easily improved through practice. You don't want to expose people to the pathogens of decision sickness (at least not at first) but instead the everyday need for decision making.
 
@@ -44,7 +44,7 @@ For instance, experimentation and chaos introduced in service to it can be a per
 
 This is also part of way some decision sicknesses—symptoms like bubbling and avoidance—are particularly insidious. Once you're afraid of decisions, you will cripple your own ability to practice.
 
-* * *
+---
 
 How often are situations you're in—whether you've created them or been thrust into them—products of refulgent decision sickness? Do people and teams your admire protect themselves from these ailments? What do they do?
 
