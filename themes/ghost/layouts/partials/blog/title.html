@@ -1,10 +1,9 @@
 <div class="blogtitle">
-  <!-- If Blog Logo
-  
-  <a class="blogtitle-logo" href="Blog URL">
-    <img src="Blog Icon" alt="Blog Title" />
+  {{ with .Site.Params.logo }}
+  <a class="blogtitle-logo" href="{{ $.Site.BaseURL }}">
+    <img src='{{ . }}' alt="{{ $.Site.Title }}" />
   </a>
-  
-  -->
-  <h1 class="blogtitle-header"><a href="{{ .Site.BaseURL }}">{{ .Site.Title}}</a></h1>
+  {{ else }}
+    <h1 class="blogtitle-header"><a href="{{ .Site.BaseURL }}">{{ .Site.Title}}</a></h1>
+  {{end}}
 </div>

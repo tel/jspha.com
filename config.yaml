@@ -9,6 +9,7 @@ params:
   description: >
     Writing on technology, storytelling, leadership, photography. Candid
     alter-ego of [Simplicial](https://simplicial.io).
+  logo: /logo.png
   subscribe: false # true if subscribe form shows
   social:
     twitter: https://twitter.com/sdbo/

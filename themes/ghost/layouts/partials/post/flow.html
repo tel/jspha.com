@@ -1,14 +1,18 @@
 <section class="postflow">
   <div class="postflow-logo">
-    <!-- 
-        if (blog.logo)
-            <a href="{{ .Site.BaseURL }}">
-                <img src="BLOG LOGO" alt="{{ .Site.Title }}"/>
-            </a>
-      -->
+
+    {{ with .Site.Params.logo }}
+    <a class="blogtitle-logo" href="{{ $.Site.BaseURL }}">
+      <img src='{{ . }}' alt="{{ $.Site.Title }}" />
+    </a>
+    {{ else }}
+      <h1 class="blogtitle-header"><a href="{{ .Site.BaseURL }}">{{ .Site.Title}}</a></h1>
+    {{end}}
+
   </div>
   <div class="postflow-info wrapper">
-    <div class="postflow-current">Introduction</div>
+    <!-- todo: make this work? -->
+    <div class="postflow-current"><!-- Introduction --></div>
     <div class="postflow-title">{{ .Title }}</div>
     <div class="postflow-readtime" data-percent="40">
       <div class="postflow-readtime-progress">
