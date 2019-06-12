@@ -5,14 +5,10 @@ theme: ghost
 
 googleAnalytics: UA-82055587-1
 
-author:
-  name: spf13
-  homepage: http://spf13.com
-
 params:
   description: >
-    Writing on technology, storytelling, leadership, photography. A fresh,
-    fresh mix. Candid alter-ego of [Simplicial](https://simplicial.io).
+    Writing on technology, storytelling, leadership, photography. Candid
+    alter-ego of [Simplicial](https://simplicial.io).
   subscribe: false # true if subscribe form shows
   social:
     twitter: https://twitter.com/sdbo/
