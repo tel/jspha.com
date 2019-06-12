@@ -2,7 +2,7 @@
   <div class="bloginfo-inner">
     {{ partial "blog/title.html" . }}
     {{ with .Site.Params.description }}
-    <p class="bloginfo-description">{{ . }}</p>
+    <p class="bloginfo-description">{{ . | markdownify }}</p>
     {{ end }}
   </div>
 </section>

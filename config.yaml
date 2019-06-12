@@ -11,7 +11,8 @@ author:
 
 params:
   description: >
-    Unorchestrated thoughts from Joseph Abrahamson
+    Writing on technology, storytelling, leadership, photography. A fresh,
+    fresh mix. Candid alter-ego of [Simplicial](https://simplicial.io).
   subscribe: false # true if subscribe form shows
   social:
     twitter: https://twitter.com/sdbo/
