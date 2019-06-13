@@ -1,7 +1,7 @@
 title: Jspha
 baseURL: https://jspha.com/
 languageCode: en-us
-theme: ghost
+theme: astro
 
 googleAnalytics: UA-82055587-1
 
