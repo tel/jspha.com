@@ -16,9 +16,6 @@ params:
     github: https://github.com/tel/
     instagram: https://www.instagram.com/sdbo/
     linkedin: https://www.linkedin.com/in/abrahamsonj/
-  twitter_url: https://twitter.com/sdbo
-  themeColor: theme-base-0b
-  layoutReverse: true
 
 menus:
   # Add menu items here, {name: ..., url: ...}
